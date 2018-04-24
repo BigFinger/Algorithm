@@ -22,10 +22,11 @@ public:
 public:
     void exploreThreaded(Node* curNode, Node*& preNode);
     void formLoop();
-    Node* getSucceed();
-    Node* getPercursor();
+    void inOrderPrint();
+    Node* getSucceed(Node* node);
+    Node* getPercursor(Node* node);
 private:
-    void createTree(Node* node);
+    void createTree(Node** node);
     void destroyTree(Node* node);
 private:
     Node* head;
